@@ -83,7 +83,7 @@ export const getUsersLikedMovies = createAsyncThunk(
   async (email) => {
     const {
       data: { movies },
-    } = await axios.get(`http://localhost:3000/api/user/liked/${email}`);
+    } = await axios.get(`https://fakeflix-api.onrender.com/api/user/liked/${email}`);
     return movies;
   }
 );
@@ -93,7 +93,7 @@ export const removeMovieFromLiked = createAsyncThunk(
   async ({ movieId, email }) => {
     const {
       data: { movies },
-    } = await axios.put("http://localhost:3000/api/user/remove", {
+    } = await axios.put("https://fakeflix-api.onrender.com/api/user/remove", {
       email,
       movieId,
     });
