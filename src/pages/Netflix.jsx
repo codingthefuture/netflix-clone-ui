@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchMovies, getGenres } from "../store";
 import { FaPlay } from "react-icons/fa";
-import { AiOutlineInfoCircle } from "react-icons/ai";
+// import { AiOutlineInfoCircle } from "react-icons/ai";
 import Slider from "../components/Slider";
 function Netflix() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,10 +61,10 @@ function Netflix() {
               <FaPlay />
               Play
             </button>
-            <button className="flex j-center a-center">
+            {/* <button className="flex j-center a-center">
               <AiOutlineInfoCircle />
               More Info
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
