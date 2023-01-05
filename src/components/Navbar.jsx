@@ -36,7 +36,7 @@ export default function Navbar({ isScrolled }) {
           </ul>
         </div>
         <div className="right flex a-center">
-          <div className={`search ${showSearch ? "show-search" : ""}`}> 
+          {/* <div className={`search ${showSearch ? "show-search" : ""}`}> 
             <button
               onFocus={() => setShowSearch(true)} //when the search button is focused, show the search bar
               onBlur={() => { //when the search button is blurred, hide the search bar
@@ -47,7 +47,7 @@ export default function Navbar({ isScrolled }) {
             >
               <FaSearch />
             </button>
-            {/* <input
+            <input
               type="text"
               placeholder="Search"
               onMouseEnter={() => setInputHover(true)}
@@ -56,8 +56,8 @@ export default function Navbar({ isScrolled }) {
                 setShowSearch(false);
                 setInputHover(false);
               }}
-            /> */}
-          </div>
+            /> 
+          </div> */}
           <button onClick={() => signOut(firebaseAuth)}>
             <FaPowerOff />
           </button>
