@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { IoPlayCircleSharp } from "react-icons/io5";
 import { AiOutlinePlus } from "react-icons/ai";
-import { RiThumbUpFill, RiThumbDownFill } from "react-icons/ri";
+// import { RiThumbUpFill, RiThumbDownFill } from "react-icons/ri";
 import { BiChevronDown } from "react-icons/bi";
 import { BsCheck } from "react-icons/bs";
 import axios from "axios";
@@ -79,8 +79,8 @@ export default React.memo(function Card({ index, movieData, isLiked = false }) {
                   title="Play"
                   onClick={() => navigate("/player")}
                 />
-                <RiThumbUpFill title="Like" />
-                <RiThumbDownFill title="Dislike" />
+                {/* <RiThumbUpFill title="Like" />
+                <RiThumbDownFill title="Dislike" /> */}
                 {isLiked ? (
                   <BsCheck
                     title="Remove from List"
