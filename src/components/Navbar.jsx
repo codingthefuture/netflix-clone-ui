@@ -5,14 +5,17 @@ import styled from "styled-components";
 import logo from "../assets/logo.png";
 import { firebaseAuth } from "../utils/firebase-config";
 import { FaPowerOff, FaSearch } from "react-icons/fa";
+
+
 export default function Navbar({ isScrolled }) {
+
   const [showSearch, setShowSearch] = useState(false);
-  const [inputHover, setInputHover] = useState(false);
+  const [inputHover, setInputHover] = useState(false); //eslint-disable-line
   const links = [
     { name: "Home", link: "/" },
     { name: "TV Shows", link: "/tv" },
     { name: "Movies", link: "/movies" },
-    { name: "My List", link: "/mylist" },
+    // { name: "My List", link: "/mylist" },
   ];
 
   return (
@@ -44,7 +47,7 @@ export default function Navbar({ isScrolled }) {
             >
               <FaSearch />
             </button>
-            <input
+            {/* <input
               type="text"
               placeholder="Search"
               onMouseEnter={() => setInputHover(true)}
@@ -53,7 +56,7 @@ export default function Navbar({ isScrolled }) {
                 setShowSearch(false);
                 setInputHover(false);
               }}
-            />
+            /> */}
           </div>
           <button onClick={() => signOut(firebaseAuth)}>
             <FaPowerOff />
