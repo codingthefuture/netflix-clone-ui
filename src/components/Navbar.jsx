@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
 import { firebaseAuth } from "../utils/firebase-config";
-import { FaPowerOff, FaSearch } from "react-icons/fa";
+import { FaPowerOff } from "react-icons/fa"; 
 
 
 export default function Navbar({ isScrolled }) {
 
-  const [showSearch, setShowSearch] = useState(false);
+  const [showSearch, setShowSearch] = useState(false); //eslint-disable-line
   const [inputHover, setInputHover] = useState(false); //eslint-disable-line
   const links = [
     { name: "Home", link: "/" },
